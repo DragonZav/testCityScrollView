@@ -59,7 +59,11 @@ class CityView: UIView {
         // but I am just going to randomize it for now
         let unsignedCount = UInt32(2)
         let unsignedRandomNumber = arc4random_uniform(unsignedCount)
-        let randomNumber = Int(unsignedRandomNumber)
+        var randomNumber = Int(unsignedRandomNumber)
+        
+        // uncomment to force color for testing
+        //randomNumber = 2
+        
         
         switch (randomNumber) {
         
@@ -75,14 +79,13 @@ class CityView: UIView {
         default:
             print("No weather data")
         }
-        
-        
+                
         
         let newLbl = UILabel(frame: CGRectMake(20, 20, width - 40, 50))
         newLbl.text = self.cityName
         newLbl.textAlignment = .Center
         newLbl.backgroundColor = UIColor.grayColor()
-        newLbl.textColor = UIColor(colorLiteralRed: 255/255.0, green: 193/255.0, blue: 7/255.0, alpha: 1.0)
+        newLbl.textColor = weatherDarkColor
         
         addSubview(newLbl)
 
