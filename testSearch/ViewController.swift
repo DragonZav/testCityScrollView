@@ -12,7 +12,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
     
     lazy var searchBar:UISearchBar = UISearchBar(frame: CGRectMake(0, 0, 0, 0))
     
-    @IBOutlet weak var tableView: UITableView!    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var weatherViews: UIScrollView!
     
     var width: CGFloat = 0
@@ -111,18 +111,9 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
     
     func addCityView(city: String) {
         
-        let newView = UIView(frame: CGRectMake(-width + (width * CGFloat(count)), -65, width, height))
-        newView.backgroundColor = UIColor.blackColor()
+        let newCityView = CityView(frame: CGRectMake(-width + (width * CGFloat(count)), -65, width, height), cityName: city)
         
-        let newLbl = UILabel(frame: CGRectMake(20, 20, width - 40, 50))
-        newLbl.text = city
-        newLbl.textAlignment = .Center
-        newLbl.backgroundColor = UIColor.grayColor()
-        newLbl.textColor = UIColor(colorLiteralRed: 255/255.0, green: 193/255.0, blue: 7/255.0, alpha: 1.0)
-        
-        newView.addSubview(newLbl)
-        
-        weatherViews.addSubview(newView)
+        weatherViews.addSubview(newCityView)
         
         let scrollSize = CGSizeMake(weatherViews.frame.size.width * count, width)
         weatherViews.contentSize = scrollSize

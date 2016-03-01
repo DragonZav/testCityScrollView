@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5897FB1C85520F000BE03F /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5897FA1C85520F000BE03F /* CityView.swift */; };
 		1E6E640F1C80F91A00F72807 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E640E1C80F91A00F72807 /* AppDelegate.swift */; };
 		1E6E64111C80F91A00F72807 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6E64101C80F91A00F72807 /* ViewController.swift */; };
 		1E6E64141C80F91A00F72807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E6E64121C80F91A00F72807 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E5897FA1C85520F000BE03F /* CityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		1E6E640B1C80F91A00F72807 /* testSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6E640E1C80F91A00F72807 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E6E64101C80F91A00F72807 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				1E6E640E1C80F91A00F72807 /* AppDelegate.swift */,
 				1E6E64101C80F91A00F72807 /* ViewController.swift */,
 				1E6E64241C81141E00F72807 /* CityCell.swift */,
+				1E5897FA1C85520F000BE03F /* CityView.swift */,
 				1E6E64121C80F91A00F72807 /* Main.storyboard */,
 				1E6E64151C80F91A00F72807 /* Assets.xcassets */,
 				1E6E64171C80F91A00F72807 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E6E64111C80F91A00F72807 /* ViewController.swift in Sources */,
+				1E5897FB1C85520F000BE03F /* CityView.swift in Sources */,
 				1E6E64251C81141E00F72807 /* CityCell.swift in Sources */,
 				1E6E640F1C80F91A00F72807 /* AppDelegate.swift in Sources */,
 			);
@@ -289,6 +293,7 @@
 				1E6E641F1C80F91A00F72807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
